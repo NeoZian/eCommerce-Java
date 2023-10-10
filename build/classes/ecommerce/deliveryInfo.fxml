@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="721.0" prefWidth="1371.0" style="-fx-background-color: #9CB5A8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.DeliveryInfoController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="120.0" prefWidth="1374.0" style="-fx-background-color: #B9D6CC;">
+         <children>
+            <Label layoutX="22.0" prefHeight="110.0" prefWidth="1346.0" text="In order to buy products you must fill up this form containing contact &amp; delivery information" textFill="#07541b">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="goHome" layoutX="1238.0" layoutY="72.0" onAction="#goHoming" prefHeight="39.0" prefWidth="129.0" text="Home" textFill="#051ada" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="receiver" layoutX="231.0" layoutY="227.0" prefHeight="25.0" prefWidth="294.0" promptText="To">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <JFXTimePicker fx:id="time" defaultColor="#141c8f" layoutX="579.0" layoutY="249.0" prefHeight="100.0" prefWidth="279.0" promptText="00.00 Am" />
+      <JFXDatePicker fx:id="date" defaultColor="#000e8f" layoutX="588.0" layoutY="470.0" prefHeight="25.0" prefWidth="270.0" promptText="mm-dd-yy" />
+      <Label layoutX="50.0" layoutY="241.0" text="Receiver's name" textFill="#8c0084">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="321.0" text="Contact number" textFill="#8c0084">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="391.0" text="Street" textFill="#8c0084">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="468.0" text="City" textFill="#8c0084">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="544.0" text="Country" textFill="#8c0084">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="contactnumber" layoutX="231.0" layoutY="299.0" prefHeight="25.0" prefWidth="294.0" promptText="Contact number">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="street" layoutX="231.0" layoutY="367.0" prefHeight="25.0" prefWidth="294.0" promptText="Street">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="city" layoutX="231.0" layoutY="446.0" prefHeight="25.0" prefWidth="294.0" promptText="City">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="country" layoutX="231.0" layoutY="522.0" prefHeight="25.0" prefWidth="294.0" promptText="Country">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="290.0" layoutY="170.0" prefHeight="17.0" prefWidth="144.0" text="Location" textFill="#210075" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="170.0" prefHeight="17.0" prefWidth="144.0" text="Date &amp; Time" textFill="#210075" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1062.0" layoutY="170.0" prefHeight="34.0" prefWidth="182.0" text="Purchase Info:" textFill="#210075" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="1011.0" layoutY="346.0" text="PayPal" textFill="#9e0a80">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="1011.0" layoutY="420.0" text="MasterCard" textFill="#ab1515">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXTextField layoutX="1177.0" layoutY="349.0" prefHeight="25.0" prefWidth="182.0" promptText="Card Number">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="1177.0" layoutY="421.0" prefHeight="25.0" prefWidth="182.0" promptText="Card Number">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="confirmBuy" layoutX="1123.0" layoutY="523.0" onAction="#confirming" prefHeight="42.0" prefWidth="137.0" style="-fx-background-color: #68BB60; -fx-background-radius: 10;" text="Confirm" textFill="#090a00" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="conlabel" layoutX="952.0" layoutY="589.0" text="Congratulation! You have made successful transaction!" textFill="#0b2523">
+         <font>
+            <Font name="Pristina" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

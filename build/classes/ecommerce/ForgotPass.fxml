@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="441.0" style="-fx-background-color: #c5fc9f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.ForgotPassController">
+   <children>
+      <Label layoutX="77.0" layoutY="58.0" prefHeight="31.0" prefWidth="322.0" text="Please enter your email address" textFill="#03511c">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="forgotEmail" alignment="CENTER" layoutX="78.0" layoutY="121.0" prefHeight="31.0" prefWidth="307.0" promptText="Enter email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="forgotlbl" layoutX="109.0" layoutY="249.0" prefHeight="41.0" prefWidth="259.0" text="Verification code has been sent" textFill="#873d16">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="enterCode" layoutX="154.0" layoutY="290.0" prefHeight="32.0" prefWidth="242.0" text="Enter your code" textFill="#0a3772">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="forgotCode" layoutX="71.0" layoutY="336.0" prefHeight="41.0" prefWidth="322.0" promptText="XXXXXX" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="ok" layoutX="169.0" layoutY="400.0" onAction="#forgotCoding" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #9fcffc;" text="Ok">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="maildone" layoutX="148.0" layoutY="200.0" onAction="#maildoning" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: #9fcffc;" text="Done">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="retry" layoutX="282.0" layoutY="400.0" prefHeight="30.0" prefWidth="94.0" text="Try Again!" textFill="#94412e">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="gainedpass" layoutX="197.0" layoutY="467.0" prefHeight="30.0" prefWidth="156.0" textFill="#ff6666">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="passtxt" layoutX="64.0" layoutY="471.0" text="Your Password is:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="672.0" prefWidth="613.0" style="-fx-background-color: #E0E4E3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.BotController">
+   <children>
+      <TextField fx:id="txt_field" layoutX="95.0" layoutY="576.0" prefHeight="39.0" prefWidth="373.0" promptText="Text me here .......">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="enterbtn" defaultButton="true" layoutX="475.0" layoutY="576.0" mnemonicParsing="false" onAction="#enteringTxt" prefHeight="39.0" prefWidth="124.0" style="-fx-background-radius: 20;" text="Enter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <JFXTextArea fx:id="txt_area" editable="false" layoutX="275.0" layoutY="8.0" prefHeight="529.0" prefWidth="327.0" style="-fx-background-color: #E2F4F7;">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextArea>
+      <ImageView fitHeight="220.0" fitWidth="259.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@img/Cortana_gif_H4.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="271.0" layoutX="3.0" layoutY="233.0">
+         <image>
+            <Image url="@img/rotate.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="444.0" prefHeight="31.0" prefWidth="118.0" text="........Hi........" textFill="#16115b">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="487.0" prefHeight="31.0" prefWidth="140.0" text="I am Jessie." textFill="#16115b">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
