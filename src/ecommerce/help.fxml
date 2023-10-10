@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.87" prefHeight="382.0" prefWidth="742.0" style="-fx-background-color: #9EAEFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.HelpController">
+    <stylesheets>
+        <URL value="@help.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="37.0" layoutY="42.0" text="Step 1: " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="77.0" text="Add products to your cart">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="143.0" text="Step 2:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="185.0" text="Or search the product in search bar" textFill="#0a0707">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="239.0" text="Step 3:" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="288.0" text="Check the list and Buy!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="273.0" layoutX="428.0" layoutY="169.0">
+         <image>
+            <Image url="@img/searchBar.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="143.0" layoutX="483.0" layoutY="27.0">
+         <image>
+            <Image url="@img/Cart.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="156.0" layoutX="473.0" layoutY="231.0">
+         <image>
+            <Image url="@img/ListShow.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="758.0" prefWidth="1373.0" style="-fx-background-color: #D1E9CB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecommerce.SignUpController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="196.0" layoutY="93.0" stroke="#0d0d0d" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="175.13671875">
+         <font>
+            <Font name="Serif Regular" size="51.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="283.0" layoutY="104.0" startX="-100.0" />
+      <TextField fx:id="Lname" layoutX="144.0" layoutY="241.0" prefHeight="31.0" prefWidth="326.0" promptText="Last Name" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Fname" layoutX="144.0" layoutY="198.0" prefHeight="31.0" prefWidth="326.0" promptText="First Name" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Email" layoutX="140.0" layoutY="323.0" prefHeight="31.0" prefWidth="326.0" promptText="\@Email" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Password" layoutX="140.0" layoutY="371.0" prefHeight="31.0" prefWidth="326.0" promptText="Password" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <JFXRadioButton fx:id="Gmale" layoutX="151.0" layoutY="289.0" text="Male">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gengrp" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="Gfemale" layoutX="231.0" layoutY="289.0" text="Female" toggleGroup="$gengrp">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXDatePicker fx:id="Dob" layoutX="152.0" layoutY="531.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="888.0" />
+      <ImageView fitHeight="79.0" fitWidth="80.0" layoutX="116.0" layoutY="37.0">
+         <image>
+            <Image url="@signUp.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="VerEmailbtn" layoutX="336.0" layoutY="664.0" onAction="#RunVerEmailbtn" text="Verify Email" textFill="#00696f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="72.0" layoutX="395.0" layoutY="702.0" startX="-70.0" />
+      <Label layoutX="22.0" layoutY="200.0" prefHeight="27.0" prefWidth="127.0" text="*First Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="243.0" prefHeight="27.0" prefWidth="108.0" text="Last Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="286.0" prefHeight="27.0" prefWidth="108.0" text="Gender:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="325.0" prefHeight="27.0" prefWidth="108.0" text="*Email:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="371.0" prefHeight="27.0" prefWidth="108.0" text="*Password:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="530.0" prefHeight="27.0" prefWidth="120.0" text="Date of birth:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Notice" layoutX="148.0" layoutY="166.0" prefHeight="21.0" prefWidth="302.0" text="*You can not leave blank any (*) signed fields" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wait" layoutX="128.0" layoutY="571.0" prefHeight="38.0" prefWidth="333.0" text="6 digits verification code has been sent" textFill="#1c4a00" visible="false">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="424.0" prefHeight="27.0" prefWidth="100.0" text="*City">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="477.0" prefHeight="27.0" prefWidth="120.0" text="Country">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="city" layoutX="140.0" layoutY="422.0" prefHeight="31.0" prefWidth="326.0" promptText="City" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="country" layoutX="136.0" layoutY="475.0" prefHeight="31.0" prefWidth="326.0" promptText="Country" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Line endX="-21.0" endY="490.0" layoutX="541.0" layoutY="166.0" startX="-21.0" />
+      <Label fx:id="verLbl" layoutX="715.0" layoutY="223.0" prefHeight="56.0" prefWidth="402.0" text="Enter Your Verification Code Here" textFill="#05054ff5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="verCode" layoutX="715.0" layoutY="274.0" prefHeight="56.0" prefWidth="382.0" promptText="6 digits code" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </TextField>
+      <Button fx:id="verDone" layoutX="824.0" layoutY="353.0" mnemonicParsing="false" onAction="#verDoning" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #5fe8ba;" text="Done">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="sorryLbl" layoutX="1097.0" layoutY="287.0" prefHeight="30.0" prefWidth="182.0" text="*Sorry! Try again" textFill="#f80b0b">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="congrast" layoutX="566.0" layoutY="445.0" prefHeight="49.0" prefWidth="699.0" text="Congratulation!!! You have been registered!" textFill="#3800f2">
+         <font>
+            <Font name="Jokerman" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
